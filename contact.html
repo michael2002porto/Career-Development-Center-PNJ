@@ -5,9 +5,32 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nova Bootstrap Template - Contact</title>
+  <title>CDC PNJ - Contact</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script>
+  function initialize() {
+    var propertiPeta = {
+      center:new google.maps.LatLng(-6.370733,106.823678),
+      zoom:15,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    
+    var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+    
+    // membuat Marker
+    var marker=new google.maps.Marker({
+        position: new google.maps.LatLng(-6.370733,106.823678),
+        map: peta,
+        animation: google.maps.Animation.DROP
+    });
+  }
+
+// event jendela di-load  
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -46,7 +69,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="d-flex align-items-center">Nova</h1>
+        <h1 class="d-flex align-items-center">CDC PNJ</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -98,20 +121,23 @@
 
       </div>
     </div><!-- End Breadcrumbs -->
+    
+    <!-- ======= Maps PNJ ======= -->
+    <div id="googleMap" style="width:100%;height:400px;"></div>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container position-relative" data-aos="fade-up">
-
-        <div class="row gy-4 d-flex justify-content-end">
+        
+        <div class="row gy-4 d-flex justify-content-lg-start">
 
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
 
             <div class="info-item d-flex">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h4>Alamat:</h4>
+                <p> Jl. Prof. DR. G.A. Siwabessy, Kampus Universitas Indonesia Depok 16425</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -119,46 +145,27 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>cdc@pnj.ac.id</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex">
               <i class="bi bi-phone flex-shrink-0"></i>
               <div>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55</p>
+                <h4>Phone:</h4>
+                <p>021-7270036</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-link flex-shrink-0"></i>
+              <div>
+                <h4>Formulir Pengaduan Masyarakat:</h4>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScSWsbZqtofpUCBX7G_8Qpvu08r2_TitR2ARp2aUNO29IHESA/viewform">Link</a>
               </div>
             </div><!-- End Info Item -->
 
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div><!-- End Contact Form -->
 
         </div>
 
@@ -175,48 +182,57 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span>Nova</span>
+              <span>Career Development Center</span>
             </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div class="social-links d-flex  mt-3">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
+            <p>Jl. Prof. DR. G.A. Siwabessy, Kampus Universitas Indonesia</p>
+            <p>Kukusan - Depok</p>
+            <p>Jawa Barat, Kabupaten Bogor</p>
+            <p>Indonesia</p>
+            <p>16425</p>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Jurusan</h4>
             <ul>
-              <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Teknik Sipil</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Teknik Mesin</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Teknik Elektro</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Teknik Informatika & Komputer</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Teknik Grafika & Penerbitan</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Akutansi</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Adminitrasi Niaga</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Pascasarjana</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Portal Aplikasi</h4>
             <ul>
-              <li><i class="bi bi-dash"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Elearning</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Jurnal PNJ</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">OPAC</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Simpeg</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Simkeu</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Siak</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Sister</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">SIMLITABMAS</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone: </strong>+6221 7270036, ext 217<br>
+              <strong>Phone: </strong> +6221 7270044<br>
+              <strong>Phone: </strong>(021) 7270036<br>
+              <strong>Email: </strong>cdc@pnj.ac.id<br>
             </p>
+            <div class="social-links d-flex  mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
 
           </div>
 
@@ -227,14 +243,14 @@
     <div class="footer-legal">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>CDC PNJ</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nova-bootstrap-business-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="https://www.pnj.ac.id/">PNJ</a>
         </div>
       </div>
     </div>
