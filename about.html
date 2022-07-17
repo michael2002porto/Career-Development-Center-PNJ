@@ -16,7 +16,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,29 +50,43 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="tautanTerkait.html">Link</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#" class="active"><span>About Us</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="about.html">Profil CDC</a></li>
+              <li><a href="team.html">Tim Kami</a></li>
+              <li><a href="pelatihan-persiapan.html">Pelatihan dan Persiapan</a></li>
             </ul>
           </li>
+          </li>
+          <li><a href="#">Career Info</a></li>
+          <li class="dropdown"><a href="#"><span>Kuesioner</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Tracer Study</a></li>
+              <li><a href="#">Kuesioner pengguna lulusan</a></li>
+              <li><a href="#">Kuesioner kerja sama cdc dan alumni</a></li>
+              <li><a href="#">Data excel tracer study 2021</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Infografis</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Kepuasan industri 2018-2021</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Company</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="prosedurLayanan.html">Prosedur Untuk Publikasi Lowongan</a></li>
+              <li><a href="#">Pilihan Layanan</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="warta.html">Warta</a></li>
+          <li><a href="tautanTerkait.html">Link</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Sign in</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -83,10 +99,10 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/about-header.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center">
 
-        <h2>About</h2>
+        <h2>Profil CDC</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>About</li>
+          <li>Profil CDC</li>
         </ol>
 
       </div>
@@ -96,191 +112,162 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4" data-aos="fade-up">
-          <div class="col-lg-4">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+        <div class="content ps-lg-6">
+          <p>
+            Career Development Center mengemban tugas untuk dapat menjadi pusat sistem pendidikan dan pelatihan yang
+            diperuntukkan bagi alumni Politeknik Negeri Jakarta. Lulusan/alumni PNJ menjadi sebuah komponen yang sangat
+            penting dalam rangka meningkatkan akreditasi sebuah perguruan tinggi. Keberadaan unit CDC menjadi bagian
+            yang sangat penting di perguruan tinggi, tak terkecuali Politeknik Negeri Jakarta.
+          </p>
+          <p>
+            Adapun tugas-tugas yang dapat diemban oleh unit CDC dirangkum berdasarkan kebutuhan-kebutuhan sebagai
+            berikut.
+          </p>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <p>1. Alumni</p>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                CDC memberikan informasi terbaru kepada para alumni tentang lowongan kerja, rekruitmen tenaga kerja, dan
+                melalui CDC alumni juga dapat memantau berbagai kegiatan tentang informasi pekerjaan yang ada berbagai
+                tempat.
+              </div>
+            </div>
           </div>
-          <div class="col-lg-8">
-            <div class="content ps-lg-5">
-              <h3>Voluptatem dignissimos provident quasi</h3>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <p>2. <i>Tracer Study</i> untuk Akreditasi Kampus</p>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                CDC merupakan salah aspek yang sangat penting untuk meningkatkan akreditasi yang merupakan keberhasilan
+                lulusan di dalam dunia kerja. CDC PNJ mengemban tugas untuk dapat mengintegrasikan tracer study semua
+                jurusan dan program studi yang pada akhirnya terpusat. Akreditasi merupakan upaya pemerintah untuk
+                menjamin mutu alumni dari sebuah perguruan tinggi. Dengan demikian, maka disinilah kampus sangat perlu
+                kepada pusat karier untuk memantau keberhasilan lulusan di dunia kerja.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <p>3. Mengetahui <i>Outcome</i> Pendidikan yang Dihasilkan oleh Perguruan Tinggi</p>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Pada aspek ini perguruan tinggi pasti akan menghasilkan hasil/<i>outcome</i>. Untuk itu, bagaimana
+                perguruan mengetahui <i>outcome</i> sehingga dapat bermanfaat dalam perubahan kondisi sosial, budaya,
+                ekonomi masyarakat. Oleh karena itu, kampus sangat perlu kepada pusat karier untuk menampung semua
+                aspirasi alumni dalam pengembangan pembangunan sesuai dengan program studi yang digeluti semasa kuliah.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <p>4. Mengetahui Kontribusi Perguruan Tinggi terhadap Kompetensi yang ada di Dunia Kerja</p>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Aspek ini merupakan misi dari sebuah perguruan tinggi untuk menjadikan mahasiswanya berkompeten pada
+                program studi yang mereka pilih. Sedangkan untuk mengetahu seberapa berhasil alumninya, maka kampus
+                perlu menyediakan sistem untuk mengukur kontribusi alumni terhadap kampus. Di samping itu, alumni juga
+                dipermudah untuk memberikan informasi tentang karier dan data domisili para alumni serta dapat juga
+                menginfokan kontribuasinya dalam dunia kerja. Hal tersebut dapat juga dijadikan alat evaluasi perguruan
+                tinggi dalam memperbaiki kurikulum program studi.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <p>5. <i>Monitoring</i> Lulusan Perguruan Tinggi Ketika Memasuki Dunia Kerja</p>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Perguruan tinggi menjadi tempat berkumpulnya mahasiswa dari seluruh Indonesia dalam jumlah yang sangat
+                luar biasa. Pada setiap semester atau tahun setiap meluluskan alumninya minimal 2 periode wisuda.
+                Lulusan akan menyebar keseluruh instansi dan dunia kerja. Maka diperlukan strategi untuk merancang dan
+                mempromosikan dari segi geografis atau pun instansi. Untuk merancang berbagai strategi tersebut dari
+                lulusan diperlukan kepada situs alumni yang memberikan kemudahan kepada laumni untuk meng-<i>update</i>
+                kondisi terbaru. Ini akan memudahkan pihak kehumasan kampus dalam menjaring mahasiswa baru pada daerah
+                yang geografis lulusan atau jaringan kerja pada instansi lulusan.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <p>6. Membangun Silaturahmi dengan Alumni</p>
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Pada aspek ini perlu dibangun silaturahmi antara alumni dan almamater karena ikatan itu akan
+                mengahasilkan kemanfaatan, baik bagi alumni maupun perguruan tinggi. Menyadari pentingnya hal ini,
+                hampir di setiap perguruan tinggi membuat organisasi kealumnian masing-masing. Kekerabatan dan jaringan
+                relasi dengan alumni akan semakin erat karena dengan memanfaatkan teknologi internet maka dimungkinkan
+                interaksi tanpa batasan tempat dan waktu. Melalui aplikasi <i>tracer study</i> kampus dapat mewujudkan
+                hal tersebut.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <p>7. Evaluasi Perguruan Tinggi</p>
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Evaluasi adalah keharusan bagi perguruan tinggi yang ingin meningkatkan mutu karena dengan evaluasi
+                dapat dijadikan dasar pengambilan keputusan terkait tingkat keberhasilan yang telah dicapai dan tindakan
+                selanjutnya yang diperlukan. Selain pada peningkatan skill yang dibutuhkan industri dengan menambah mata
+                kuliah tertentu, evaluasi juga bisa dijadikan bahan pengkajian permasalahan manajemen seperti alur
+                pendaftaran mahasiswa baru yang lebih mudah sesuai kondisi geografis atau hal lain dari kolom sumbang
+                saran alumni (<a
+                  href="https://www.saifullahidris.com/2019/05/career-development-center-dan-kebutuhan.html"
+                  target="_blank">https://www.saifullahidris.com/2019/05/career-development-center-dan-kebutuhan.html</a>).
+                <br><br>
+                Ada beberapa hal yang dikembangkan dalam <i>Career Development Center</i> PNJ, yaitu Pengembangan
+                Karier,
+                Rekruitmen, dan <i>Tracer Study</i> yang di dalamnya juga terdapat tracer terhadap kepuasan industri.
+                Dengan
+                ketiga fokus pengembangan tersebut diharapkan <i>Career Development Center</i> dapat mewujudkan beberapa
+                program yang akan membantu alumni dalam mewujudkan akreditasi Kampus yang lebih baik lagi ke depan.
+                (Linda)
+              </div>
             </div>
           </div>
         </div>
 
       </div>
     </section><!-- End About Section -->
-
-    <!-- ======= Why Choose Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Why Choose Us</h2>
-
-        </div>
-
-        <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-xl-5 img-bg" style="background-image: url('assets/img/why-us-bg.jpg')"></div>
-          <div class="col-xl-7 slides  position-relative">
-
-            <div class="slides-1 swiper">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Let's grow your business together</h3>
-                    <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima maiores quidem, dolorum.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam perferendis asperiores explicabo vel tempore velit totam, natus nesciunt accusantium dicta quod quibusdam ipsum maiores nobis non, eum. Ullam reiciendis dignissimos laborum aut, magni voluptatem velit doloribus quas sapiente optio.</p>
-                  </div>
-                </div><!-- End slide item -->
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Unde perspiciatis ut repellat dolorem</h3>
-                    <h4 class="mb-3">Amet cumque nam sed voluptas doloribus iusto. Dolorem eos aliquam quis.</h4>
-                    <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat dolor.</p>
-                  </div>
-                </div><!-- End slide item -->
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Aliquid non alias minus</h3>
-                    <h4 class="mb-3">Necessitatibus voluptatibus explicabo dolores a vitae voluptatum.</h4>
-                    <p>Neque voluptates aut. Soluta aut perspiciatis porro deserunt. Voluptate ut itaque velit. Aut consectetur voluptatem aspernatur sequi sit laborum. Voluptas enim dolorum fugiat aut.</p>
-                  </div>
-                </div><!-- End slide item -->
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3 class="mb-3">Necessitatibus suscipit non voluptatem quibusdam</h3>
-                    <h4 class="mb-3">Tempora quos est ut quia adipisci ut voluptas. Deleniti laborum soluta nihil est. Eum similique neque autem ut.</h4>
-                    <p>Ut rerum et autem vel. Et rerum molestiae aut sit vel incidunt sit at voluptatem. Saepe dolorem et sed voluptate impedit. Ad et qui sint at qui animi animi rerum.</p>
-                  </div>
-                </div><!-- End slide item -->
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Why Choose Us Section -->
-
-    <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action" class="call-to-action">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h3>Ut fugiat aliquam aut non</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            <a class="cta-btn" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Call To Action Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Our Team</h2>
-
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
 
   </main><!-- End #main -->
 
@@ -363,7 +350,8 @@
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
