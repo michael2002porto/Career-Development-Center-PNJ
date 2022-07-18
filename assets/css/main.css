@@ -977,7 +977,7 @@ section {
   margin-top: 15px;
 }
 
-.recent-posts .post-box .meta .post-date {
+.post-date {
   font-size: 15px;
   font-weight: 400;
   color: var(--color-primary);
