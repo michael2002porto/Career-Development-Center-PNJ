@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
   /**
-   * Preloader
+   * Preloader untuk menghilangkan efek loading putar2
    */
   const preloader = document.querySelector('#preloader');
   if (preloader) {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Sticky header on scroll
+   * Sticky header on scroll untuk navbar sticked (menempel) di atas ketika di scroll
    */
   const selectHeader = document.querySelector('#header');
   if (selectHeader) {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Mobile nav toggle
+   * Mobile nav toggle (garis titik tiga) untuk tampilan navbar di mobile
    */
   const mobileNavShow = document.querySelector('.mobile-nav-show');
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Toggle mobile nav dropdowns
+   * Toggle mobile nav dropdowns untuk tampilan navbar di mobile
    */
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
-   * Scroll top button
+   * Scroll top button untuk button panah ke atas di pojok kanan bawah ketika di klik akan otomatis scroll ke atas
    */
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
@@ -76,14 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Initiate glightbox
+   * Initiate glightbox untuk youtube dan kuesioner
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
 
   /**
-   * Init swiper slider with 1 slide at once in desktop view
+   * Init swiper slider with 1 slide at once in desktop view untuk slide di pelatihan persiapan dan index
    */
   new Swiper('.slides-1', {
     speed: 600,
@@ -137,44 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
-   * Porfolio isotope and filter
-   */
-  let portfolionIsotope = document.querySelector('.portfolio-isotope');
-
-  if (portfolionIsotope) {
-
-    let portfolioFilter = portfolionIsotope.getAttribute('data-portfolio-filter') ? portfolionIsotope.getAttribute('data-portfolio-filter') : '*';
-    let portfolioLayout = portfolionIsotope.getAttribute('data-portfolio-layout') ? portfolionIsotope.getAttribute('data-portfolio-layout') : 'masonry';
-    let portfolioSort = portfolionIsotope.getAttribute('data-portfolio-sort') ? portfolionIsotope.getAttribute('data-portfolio-sort') : 'original-order';
-
-    window.addEventListener('load', () => {
-      let portfolioIsotope = new Isotope(document.querySelector('.portfolio-container'), {
-        itemSelector: '.portfolio-item',
-        layoutMode: portfolioLayout,
-        filter: portfolioFilter,
-        sortBy: portfolioSort
-      });
-
-      let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-flters li');
-      menuFilters.forEach(function(el) {
-        el.addEventListener('click', function() {
-          document.querySelector('.portfolio-isotope .portfolio-flters .filter-active').classList.remove('filter-active');
-          this.classList.add('filter-active');
-          portfolioIsotope.arrange({
-            filter: this.getAttribute('data-filter')
-          });
-          if (typeof aos_init === 'function') {
-            aos_init();
-          }
-        }, false);
-      });
-
-    });
-
-  }
-
-  /**
-   * Animation on scroll function and init
+   * Animation on scroll function and init untuk efek animasi saat scroll pada semua konten (naik ke atas)
    */
   function aos_init() {
     AOS.init({
