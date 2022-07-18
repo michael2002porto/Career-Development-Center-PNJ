@@ -755,38 +755,6 @@ section {
   color: var(--color-primary);
 }
 
-/*---------------------------------------------------------------
-# FAQ
----------------------------------------------------------------*/
-.faq-item{
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-.faq-body{
-  display: none;
-  margin-top: 20px;
-}
-.faq-wrapper{
-  width: 75%;
-  margin: 0 auto;
-}
-.faq-inner{
-  padding: 30px;
-}
-.faq-plus{
-  float: right;
-  font-size: 1.4em;
-  line-height: 1em;
-  cursor: pointer;
-}
-
-.faq-inner hr{
-  background-color: #9b9b9b;
-}
-.faq-item h3{
-  font-size: 17px;
-}
-
 /*--------------------------------------------------------------
 # Services List Section
 --------------------------------------------------------------*/
